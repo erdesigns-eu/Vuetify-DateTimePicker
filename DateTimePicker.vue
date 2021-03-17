@@ -93,6 +93,10 @@ export default {
           month = aux;
       }
 
+      if (undefined === year || undefined === month || undefined === day) {
+        return this.d;
+      }
+
       return `${year}-${month}-${day}`;
     }
   }
